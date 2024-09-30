@@ -4,7 +4,7 @@
 
 /* Container styles for the main layout */
 .container {
-  @apply flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-blue-500 p-6; /* Flexbox centering */
+  @apply flex items-center justify-center min-h-screen bg-gradient-to-br to-blue-500 p-6; /* Flexbox centering */
 }
 
 /* Card styling for the main content area */
