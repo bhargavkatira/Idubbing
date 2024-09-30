@@ -1,0 +1,4 @@
+.logout-button {
+    @apply bg-red-500 text-white font-semibold py-2 px-4 rounded-md;
+    @apply hover:bg-red-600 transition duration-200;
+}

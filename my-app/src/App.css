@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container styles for the main layout */
+.container {
+  @apply flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-blue-500 p-6; /* Flexbox centering */
+}
+
+/* Card styling for the main content area */
+.card {
+  @apply bg-white rounded-lg shadow-lg p-6 w-full max-w-md; /* Centering with max width */
+}
+
+/* Title styling */
+.title {
+  @apply text-3xl font-extrabold mb-6 text-center text-gray-900;
+}
+
+/* Section styling for different components */
+.section {
+  @apply bg-gray-50 rounded-lg shadow-md p-4 mb-4;
+}
+
+/* Section title styling */
+.section-title {
+  @apply text-xl font-semibold mb-2 text-center; /* Centered text */
+}
+
+/* Link styling */
+.App-link {
+  @apply text-blue-400 hover:underline; /* Adding hover effect */
+}
+
+/* Button styling */
+.button {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-200 ease-in-out;
+}
+
+/* Additional styles for the App logo if needed */
+.App-logo {
+  @apply h-[40vmin] pointer-events-none; /* Tailwind utility for height */
+}
+
+/* Animation for the logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Button styles */
+.btn {
+  @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-200 ease-in-out;
+}
+
+.btn:hover {
+  @apply bg-blue-700; /* Darker shade on hover */
+}
+
+.btn:focus {
+  @apply ring-2 ring-blue-300; /* Add focus ring for accessibility */
+}

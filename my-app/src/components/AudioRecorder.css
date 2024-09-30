@@ -1,0 +1,71 @@
+/* src/components/AudioRecorder.css */
+
+.audio-recorder-container {
+    @apply flex flex-col items-center bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto mt-8 space-y-6;
+}
+
+.audio-recorder-title {
+    @apply text-3xl font-bold text-indigo-800 mb-2;
+}
+
+.record-button {
+    border: 2px solid red;
+   
+    @apply w-full max-w-lg py-4 rounded-full text-white font-semibold transition-all duration-300; 
+    width: 180px;/* Adjust max-width as needed */
+}
+
+.record-button-playing {
+    @apply bg-red-800 hover:bg-red-600 focus:ring-red-300;
+}
+
+.record-button-idle {
+    @apply bg-blue-600 hover:bg-blue-700 focus:ring-blue-300;
+}
+
+.record-button-common {
+    @apply focus:outline-none focus:ring-4 focus:ring-opacity-50 shadow-lg transform hover:scale-105 active:scale-95;
+}
+
+.audio-player {
+    @apply w-full bg-white p-4 rounded-lg shadow-md;
+}
+
+.ping-indicator {
+    @apply absolute top-0 right-0 flex h-3 w-3;
+}
+
+.ping {
+    @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75;
+}
+
+.ping-dot {
+    @apply relative inline-flex rounded-full h-3 w-3 bg-red-500;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+    .audio-recorder-title {
+        @apply text-2xl; /* Smaller title on mobile */
+    }
+
+    .record-button {
+        @apply py-3; /* Smaller padding on mobile */
+    }
+
+    .audio-player {
+        @apply p-2; /* Smaller padding for audio player on mobile */
+    }
+}
+
+.audio-recorder-container {
+    /* existing styles */
+}
+
+#waveform {
+    /* This container will hold the waveform visualization */
+    width: 100%;
+    height: 100px; /* Set height for the waveform */
+}
+
+

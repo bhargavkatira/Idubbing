@@ -1,0 +1,51 @@
+/* src/components/DialogueDisplay.css */
+
+.dialogue-container {
+    @apply bg-white p-6 rounded-xl shadow-lg border border-gray-200 space-y-4 w-full max-w-lg mx-auto; /* Center and maintain width */
+}
+.dialogue-title {
+    @apply text-2xl font-bold text-gray-800 text-center;
+}
+
+.input-group {
+    @apply flex flex-col space-y-6; /* Increased space between inputs */
+}
+
+.label {
+    @apply text-gray-600;
+}
+
+.input {
+    @apply w-[90%] p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200; /* Decreased width by 10% */
+}
+
+.button-container {
+    @apply flex justify-between w-full mt-6 space-x-4;
+}
+
+.button {
+    @apply flex items-center justify-center px-6 py-3 bg-blue-500 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-600 transition-colors duration-300;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+    .input {
+        @apply w-full; /* Full width on mobile */
+    }
+    
+    .dialogue-title {
+        @apply text-xl; /* Smaller title on mobile */
+    }
+    
+    .input-group {
+        @apply space-y-4; /* Less space between inputs on mobile */
+    }
+    
+    .button-container {
+        @apply flex-col space-y-4; /* Stack buttons on mobile */
+    }
+    
+    .button {
+        @apply w-full; /* Full width buttons on mobile */
+    }
+}
