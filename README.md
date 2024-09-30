@@ -1,6 +1,12 @@
 Deployed Application
 You can view the deployed app at: https://idubbing.onrender.com
 
+username : user1
+password : password1 
+
+username : user2
+password : password2
+
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
